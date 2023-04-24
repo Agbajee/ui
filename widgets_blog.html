@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="../../../images/favicon.ico">
 
-    <title>InvestX - Dashboard</title>
-
-    <!-- Vendors Style-->
-    <link rel="stylesheet" href="src/css/vendors_css.css">
-
-    <!-- Style-->
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/skin_color.css">
-
-    <link rel="stylesheet" href="src/css/custom.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
-    <link rel="stylesheet" href="src/css/dashboard5.css">
+    <title>InvestX - Dashboard  Blog Widgets</title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../src/css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="../src/css/skin_color.css">
+	
 </head>
+
 <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
 	
 <div class="wrapper">
 	<div id="loader"></div>
 
-  <header class="main-header"> 
+  <header class="main-header">
+	<div class="d-flex align-items-center logo-box justify-content-start">	
+		<!-- Logo -->
+		<a href="index.html" class="logo">
+		  <!-- logo-->
+		  <div class="logo-mini w-40">
+			  <span class="light-logo"><img src="../../../images/logo-letter.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="../../../images/logo-letter-white.png" alt="logo"></span>
+		  </div>
+		  <div class="logo-lg">
+			  <span class="light-logo"><img src="../../../images/logo-dark-text.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="../../../images/logo-light-text.png" alt="logo"></span>
+		  </div>
+		</a>	
+	</div>   
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
@@ -610,7 +622,7 @@
 		</div>
     </section>
   </aside>
-
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
 	  <div class="container-full">
@@ -618,172 +630,88 @@
 		<div class="content-header">
 			<div class="d-flex align-items-center">
 				<div class="me-auto">
-					<h4 class="page-title">Products</h4>
+					<h4 class="page-title">Blog widgets</h4>
 					<div class="d-inline-block align-items-center">
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-								<li class="breadcrumb-item" aria-current="page">e-Commerce</li>
-								<li class="breadcrumb-item active" aria-current="page">Products</li>
+								<li class="breadcrumb-item" aria-current="page">widgets</li>
+								<li class="breadcrumb-item active" aria-current="page">Blog widgets</li>
 							</ol>
 						</nav>
 					</div>
-				</div>
-				
+				</div>				
 			</div>
-		</div>   
+		</div>
 
 		<!-- Main content -->
 		<section class="content">
-			<div class="row">
-				<div class="col-xl-3 col-lg-4 col-12">
-					<div class="box">
-						<div class="box-body">
-							<form>
-								<div class="form-group mb-30">
-									<h3 class="fw-500 fs-15 mt-0 mb-20">Categories</h3>
-									<div class="checkbox-list">
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_1" class="chk-col-primary">
-											<label for="md_checkbox_1" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Products
-												<span class="ml-auto text-fade font-600">28</span>
-											</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_2" class="chk-col-primary">
-											<label for="md_checkbox_2" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Courses
-												<span class="ml-auto text-fade font-600">125</span>
-											</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_3" class="chk-col-primary">
-											<label for="md_checkbox_3" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Services
-												<span class="ml-auto text-fade font-600">99</span>
-											</label>
-										</div>
+			
+		  <div class="row">
+			  <div class="col-12">			
+				<div class="box bg-primary-light">
+					<div class="box-header no-border">
+						<h4 class="box-title text-primary">Blog Style</h4>
+					</div>
+				</div>
+			  </div>
+			 <div class="col-xl-4 col-md-6 col-12">
+				<div class="blog-post rounded overflow-hidden">
+					<div class="entry-image clearfix">
+						<img class="img-fluid" src="assets/images/avatar/1.jpg" alt="">
+					</div>
+					<div class="blog-detail">
+						<div class="entry-title mb-10">
+							<a href="#">Blog Post With Image Slider</a>
+						</div>
+						
+						<div class="entry-meta mb-10">
+							<ul class="list-unstyled">
+								<li><a href="#" class="text-mute hover-primary"><i class="fa fa-folder-open-o"></i> Design</a></li>
+								<li><a href="#" class="text-mute hover-primary"><i class="fa fa-comment-o"></i> 5</a></li>
+								<li><a href="#" class="text-mute hover-primary"><i class="fa fa-calendar-o"></i> 12 Aug 2020</a></li>
+							</ul>
+						</div>
+						<div class="entry-content">
+										<p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus fuga laborum totam itaque architecto! Laudantium sed delectus assumenda, doloribus non.</p>
 									</div>
-								</div>
-								
-								<div class="form-group mb-30">
-									<h3 class="fw-500 fs-15 mt-0 mb-20">Price</h3>
-									<div class="checkbox-list">
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_1">
-											<label for="radio_1" class="fs-13 fw-400 d-flex justify-content-between text-fade">All
-												<span class="ml-auto text-fade font-600">28</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_2">
-											<label for="radio_2" class="fs-13 fw-400 d-flex justify-content-between text-fade">0$ - 99$
-												<span class="ml-auto text-fade font-600">1403</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_3">
-											<label for="radio_3" class="fs-13 fw-400 d-flex justify-content-between text-fade">100$ - 999$
-												<span class="ml-auto text-fade font-600">570</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_4">
-											<label for="radio_4" class="fs-13 fw-400 d-flex justify-content-between text-fade">100$ - 999$
-												<span class="ml-auto text-fade font-600">570</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_5">
-											<label for="radio_5" class="fs-13 fw-400 d-flex justify-content-between text-fade">1000$ &amp; Above
-												<span class="ml-auto text-fade font-600">38</span>
-											</label>											
-										</div>
-									</div>
-								</div>
-								
-								<div class="form-group mb-30">
-									<h3 class="fw-500 fs-15 mt-0 mb-20">Pricing</h3>
-									<div class="checkbox-list">
-										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="primary">
-									</div>
-								</div>
-								
-								<div class="form-group mb-30">
-									<h3 class="fw-500 mt-0 mb-20">Discount</h3>
-									<div class="checkbox-list">
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_6" class="chk-col-primary">
-											<label for="md_checkbox_6" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Less than 10%</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_7" class="chk-col-primary">
-											<label for="md_checkbox_7" class="fs-13 fw-400 d-flex justify-content-between text-fade"> 10% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_8" class="chk-col-primary">
-											<label for="md_checkbox_8" class="fs-13 fw-400 d-flex justify-content-between text-fade"> 20% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_9" class="chk-col-primary">
-											<label for="md_checkbox_9" class="fs-13 fw-400 d-flex justify-content-between text-fade"> 30% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_10" class="chk-col-primary">
-											<label for="md_checkbox_10" class="fs-13 fw-400 d-flex justify-content-between text-fade">40% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_11" class="chk-col-primary">
-											<label for="md_checkbox_11" class="fs-13 fw-400 d-flex justify-content-between text-fade">50% or more</label>
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary mr-2">Reset</button>
-								<button type="reset" class="btn btn-primary-light">Setup</button>
-							</form>
+						<div class="entry-share d-flex justify-content-between align-items-center">
+							<div class="entry-button">
+								<a href="#" class="btn btn-primary-light btn-sm">Read more</a>
+							</div>
+							<div class="social">
+								<strong>Share : </strong>
+								<ul class="list-unstyled">
+									<li>
+										<a href="#" class="text-mute hover-primary"> <i class="fa fa-facebook"></i> </a>
+									</li>
+									<li>
+										<a href="#" class="text-mute hover-primary"> <i class="fa fa-twitter"></i> </a>
+									</li>
+									<li>
+										<a href="#" class="text-mute hover-primary"> <i class="fa fa-pinterest-p"></i> </a>
+									</li>
+									<li>
+										<a href="#" class="text-mute hover-primary"> <i class="fa fa-dribbble"></i> </a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-9 col-lg-8 col-12">				
-					<div class="row">
-						<div class="col-xl-4 col-md-6 col-12">
-							<div class="box">
-								<div class="box-body">
-									<div class="overlay position-relative">
-										<div class="position-absolute r-0"><span class="bg-primary-light avatar rounded10">-10%</span></div>
-										<img src="assets/images/avatar/2.jpg" alt="" class="img-fluid">
-										<div class="overlay-layer">
-											<a href="#" class="btn btn-sm btn-primary me-2">Quick View</a>
-											<a href="#" class="btn btn-sm btn-primary-light">Purchase</a>
-										</div>
-									</div>
-									<div class="mt-30 pro-dec text-center">
-										<h5 class="fw-500"><a href="#">Product Name</a></h5>
-										<p>Lorem Ipsum Dummy Text</p>
-										<div class="reting">
-											<ul class="list-inline text-center">
-												<li class="px-0"><i class="text-warning fa fa-star"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star-o"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star-o"></i></li>
-											</ul>
-										</div>
-										<div class="price-dle d-flex justify-content-center align-items-center">
-											<p class="fs-16 mb-0 text-fade me-10"><del>$199</del></p>
-											<p class="fs-16 mb-0 fw-600">$149</p>
-										</div>
-									</div>
-								</div>
-							</div>					
-						</div>
-					</div>
-				</div>
+			</div>		  
+			  
+			 
 			</div>
+
+		  <!-- /.row -->
+
 		</section>
-		<!-- /.content -->
+		<!-- /.content -->	  
 	  </div>
   </div>
   <!-- /.content-wrapper -->
- 
+
    <footer class="main-footer">
     <div class="pull-right d-none d-sm-inline-block">
         <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
@@ -1217,25 +1145,21 @@
 </div>
 <!-- ./wrapper -->
 	
-	<!-- Vendor JS -->
-	<script src="src/js/vendors.min.js"></script>
-    <script src="assets/icons/feather-icons/feather.min.js"></script>
-    <script src="assets/vendor_components/raphael/raphael.min.js"></script>
-    <script src="assets/vendor_components/morris.js/morris.min.js"></script>
-    <script src="assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
-    <script src="assets/vendor_components/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/vendor_plugins/bootstrap-slider/bootstrap-slider.js"></script>
-    <script src="assets/vendor_components/OwlCarousel2/dist/owl.carousel.js"></script>
-    <script src="assets/vendor_components/c3/c3.min.js"></script>
-    <script src="assets/vendor_components/c3/d3.min.js"></script>
-
-
-    <!-- InvestX App -->
-    <script src="src/js/demo.js"></script>
-    <script src="src/js/template.js"></script>
-    <script src="src/js/pages/dashboard5.js"></script>
-	<script>$('.slider').slider()</script>
+	<!-- Page Content overlay -->
 	
-
+	
+	<!-- Vendor JS -->
+	<script src="../src/js/vendors.min.js"></script>
+	<script src="../src/js/pages/chat-popup.js"></script>
+    <script src="../../../assets/icons/feather-icons/feather.min.js"></script>
+	
+	<script src="../../../assets/vendor_components/OwlCarousel2/dist/owl.carousel.js"></script>
+	
+	<!-- InvestX App -->
+	<script src="../src/js/demo.js"></script>
+	<script src="../src/js/template.js"></script>
+	
+	<script src="../src/js/pages/widget-blog.js"></script>
+	
 </body>
 </html>
