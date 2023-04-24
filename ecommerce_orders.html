@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="../../../images/favicon.ico">
 
-    <title>InvestX - Dashboard</title>
+    <title>InvestX - Dashboard  Blank Page </title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../src/css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="../src/css/skin_color.css">	
 
-    <!-- Vendors Style-->
-    <link rel="stylesheet" href="src/css/vendors_css.css">
-
-    <!-- Style-->
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/skin_color.css">
-
-    <link rel="stylesheet" href="src/css/custom.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
-    <link rel="stylesheet" href="src/css/dashboard5.css">
 </head>
 <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
 	
 <div class="wrapper">
 	<div id="loader"></div>
 
-  <header class="main-header"> 
+  <header class="main-header">
+	<div class="d-flex align-items-center logo-box justify-content-start">	
+		<!-- Logo -->
+		<a href="index.html" class="logo">
+		  <!-- logo-->
+		  <div class="logo-mini w-40">
+			  <span class="light-logo"><img src="../../../images/logo-letter.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="../../../images/logo-letter-white.png" alt="logo"></span>
+		  </div>
+		  <div class="logo-lg">
+			  <span class="light-logo"><img src="../../../images/logo-dark-text.png" alt="logo"></span>
+			  <span class="dark-logo"><img src="../../../images/logo-light-text.png" alt="logo"></span>
+		  </div>
+		</a>	
+	</div>   
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
@@ -618,166 +629,362 @@
 		<div class="content-header">
 			<div class="d-flex align-items-center">
 				<div class="me-auto">
-					<h4 class="page-title">Products</h4>
+					<h4 class="page-title">Transaction History</h4>
 					<div class="d-inline-block align-items-center">
 						<nav>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
 								<li class="breadcrumb-item" aria-current="page">e-Commerce</li>
-								<li class="breadcrumb-item active" aria-current="page">Products</li>
+								<li class="breadcrumb-item active" aria-current="page">Orders</li>
 							</ol>
 						</nav>
 					</div>
 				</div>
 				
 			</div>
-		</div>   
+		</div>
 
 		<!-- Main content -->
 		<section class="content">
 			<div class="row">
-				<div class="col-xl-3 col-lg-4 col-12">
-					<div class="box">
-						<div class="box-body">
-							<form>
-								<div class="form-group mb-30">
-									<h3 class="fw-500 fs-15 mt-0 mb-20">Categories</h3>
-									<div class="checkbox-list">
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_1" class="chk-col-primary">
-											<label for="md_checkbox_1" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Products
-												<span class="ml-auto text-fade font-600">28</span>
-											</label>
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="row mb-2">
+								<div class="col-xl-8">
+									<form class="row gy-2 gx-2 align-items-center justify-content-xl-start justify-content-between">
+										<div class="col-auto">
+											<label for="inputPassword2" class="visually-hidden">Search</label>
+											<input type="search" class="form-control" id="inputPassword2" placeholder="Search...">
 										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_2" class="chk-col-primary">
-											<label for="md_checkbox_2" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Courses
-												<span class="ml-auto text-fade font-600">125</span>
-											</label>
+										<div class="col-auto">
+											<div class="d-flex align-items-center">
+												<label for="status-select" class="me-2">Status</label>
+												<select class="form-select" id="status-select">
+													<option selected>Choose...</option>
+													<option value="1">Paid</option>
+													<option value="2">Awaiting Authorization</option>
+													<option value="3">Payment failed</option>
+													<option value="4">Cash On Delivery</option>
+													<option value="5">Fulfilled</option>
+													<option value="6">Unfulfilled</option>
+												</select>
+											</div>
 										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_3" class="chk-col-primary">
-											<label for="md_checkbox_3" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Services
-												<span class="ml-auto text-fade font-600">99</span>
-											</label>
-										</div>
-									</div>
+									</form>                            
 								</div>
-								
-								<div class="form-group mb-30">
-									<h3 class="fw-500 fs-15 mt-0 mb-20">Price</h3>
-									<div class="checkbox-list">
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_1">
-											<label for="radio_1" class="fs-13 fw-400 d-flex justify-content-between text-fade">All
-												<span class="ml-auto text-fade font-600">28</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_2">
-											<label for="radio_2" class="fs-13 fw-400 d-flex justify-content-between text-fade">0$ - 99$
-												<span class="ml-auto text-fade font-600">1403</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_3">
-											<label for="radio_3" class="fs-13 fw-400 d-flex justify-content-between text-fade">100$ - 999$
-												<span class="ml-auto text-fade font-600">570</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_4">
-											<label for="radio_4" class="fs-13 fw-400 d-flex justify-content-between text-fade">100$ - 999$
-												<span class="ml-auto text-fade font-600">570</span>
-											</label>											
-										</div>
-										<div class="mb-2">
-											<input name="group1" type="radio" id="radio_5">
-											<label for="radio_5" class="fs-13 fw-400 d-flex justify-content-between text-fade">1000$ &amp; Above
-												<span class="ml-auto text-fade font-600">38</span>
-											</label>											
-										</div>
+								<div class="col-xl-4">
+									<div class="text-xl-end mt-xl-0 mt-2">
+										<button type="button" class="btn btn-primary mb-2 me-2"><i class="mdi mdi-basket me-1"></i> Add New Order</button>
+										<button type="button" class="btn btn-primary-light mb-2">Export</button>
 									</div>
-								</div>
-								
-								<div class="form-group mb-30">
-									<h3 class="fw-500 fs-15 mt-0 mb-20">Pricing</h3>
-									<div class="checkbox-list">
-										<input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200" data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="primary">
-									</div>
-								</div>
-								
-								<div class="form-group mb-30">
-									<h3 class="fw-500 mt-0 mb-20">Discount</h3>
-									<div class="checkbox-list">
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_6" class="chk-col-primary">
-											<label for="md_checkbox_6" class="fs-13 fw-400 d-flex justify-content-between text-fade"> Less than 10%</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_7" class="chk-col-primary">
-											<label for="md_checkbox_7" class="fs-13 fw-400 d-flex justify-content-between text-fade"> 10% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_8" class="chk-col-primary">
-											<label for="md_checkbox_8" class="fs-13 fw-400 d-flex justify-content-between text-fade"> 20% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_9" class="chk-col-primary">
-											<label for="md_checkbox_9" class="fs-13 fw-400 d-flex justify-content-between text-fade"> 30% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_10" class="chk-col-primary">
-											<label for="md_checkbox_10" class="fs-13 fw-400 d-flex justify-content-between text-fade">40% or more</label>
-										</div>
-										<div class="mb-2">
-											<input type="checkbox" id="md_checkbox_11" class="chk-col-primary">
-											<label for="md_checkbox_11" class="fs-13 fw-400 d-flex justify-content-between text-fade">50% or more</label>
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary mr-2">Reset</button>
-								<button type="reset" class="btn btn-primary-light">Setup</button>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-9 col-lg-8 col-12">				
-					<div class="row">
-						<div class="col-xl-4 col-md-6 col-12">
-							<div class="box">
-								<div class="box-body">
-									<div class="overlay position-relative">
-										<div class="position-absolute r-0"><span class="bg-primary-light avatar rounded10">-10%</span></div>
-										<img src="assets/images/avatar/2.jpg" alt="" class="img-fluid">
-										<div class="overlay-layer">
-											<a href="#" class="btn btn-sm btn-primary me-2">Quick View</a>
-											<a href="#" class="btn btn-sm btn-primary-light">Purchase</a>
-										</div>
-									</div>
-									<div class="mt-30 pro-dec text-center">
-										<h5 class="fw-500"><a href="#">Product Name</a></h5>
-										<p>Lorem Ipsum Dummy Text</p>
-										<div class="reting">
-											<ul class="list-inline text-center">
-												<li class="px-0"><i class="text-warning fa fa-star"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star-o"></i></li>
-												<li class="px-0"><i class="text-warning fa fa-star-o"></i></li>
-											</ul>
-										</div>
-										<div class="price-dle d-flex justify-content-center align-items-center">
-											<p class="fs-16 mb-0 text-fade me-10"><del>$199</del></p>
-											<p class="fs-16 mb-0 fw-600">$149</p>
-										</div>
-									</div>
-								</div>
-							</div>					
-						</div>
-					</div>
-				</div>
+								</div><!-- end col-->
+							</div>
+
+							<div class="table-responsive">
+								<table class="table table-centered mb-0">
+									<thead class="table-light text-fade">
+										<tr class="text-dark">
+											<th style="width: 20px;">
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck1">
+													<label class="form-check-label" for="customCheck1">&nbsp;</label>
+												</div>
+											</th>
+											<th>Order ID</th>
+											<th>Date</th>
+											<th>Payment Status</th>
+											<th>Total</th>
+											<th>Payment Method</th>
+											<th>Order Status</th>
+											<th style="width: 125px;">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck2">
+													<label class="form-check-label" for="customCheck2">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9708</a> </td>
+											<td>
+												Aug, 05 2018 <small>10:29 PM</small>
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-success-light"><i class="mdi mdi-bitcoin"></i> Paid</span></p>
+											</td>
+											<td>
+												$176.41
+											</td>
+											<td>
+												Mastercard
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Shipped</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck3">
+													<label class="form-check-label" for="customCheck3">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9707</a> </td>
+											<td>Aug, 04 2018 <small>08:18 AM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-warning-light"><i class="mdi mdi-timer-sand"></i> Awaiting Authorization</span></p>
+											</td>
+											<td>
+												$1,458.65
+											</td>
+											<td>
+												Visa
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Processing</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck4">
+													<label class="form-check-label" for="customCheck4">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9706</a> </td>
+											<td>Aug, 04 2018 <small>10:29 PM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-success-light"><i class="mdi mdi-bitcoin"></i> Paid</span></p>
+											</td>
+											<td>
+												$801.99
+											</td>
+											<td>
+												Credit Card
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Processing</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck5">
+													<label class="form-check-label" for="customCheck5">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9705</a> </td>
+											<td>Aug, 03 2018 <small>07:56 AM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-success-light"><i class="mdi mdi-bitcoin"></i> Paid</span></p>
+											</td>
+											<td>
+												$215.35
+											</td>
+											<td>
+												Mastercard
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Delivered</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck6">
+													<label class="form-check-label" for="customCheck6">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9704</a> </td>
+											<td>May, 22 2018 <small>07:22 PM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-danger-light"><i class="mdi mdi-cancel"></i> Payment Failed</span></p>
+											</td>
+											<td>
+												$2,514.36
+											</td>
+											<td>
+												Paypal
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Cancelled</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck7">
+													<label class="form-check-label" for="customCheck7">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9703</a> </td>
+											<td>Apr, 02 2018 <small>03:02 AM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-success-light"><i class="mdi mdi-bitcoin"></i> Paid</span></p>
+											</td>
+											<td>
+												$183.20
+											</td>
+											<td>
+												Payoneer
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Shipped</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck8">
+													<label class="form-check-label" for="customCheck8">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9702</a> </td>
+											<td>Mar, 18 2018 <small>11:19 PM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-warning-light"><i class="mdi mdi-timer-sand"></i> Awaiting Authorization</span></p>
+											</td>
+											<td>
+												$1,768.41
+											</td>
+											<td>
+												Visa
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Processing</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck9">
+													<label class="form-check-label" for="customCheck9">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9701</a> </td>
+											<td>Feb, 01 2018 <small>07:22 AM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-info-light"><i class="mdi mdi-cash"></i> Unpaid</span></p>
+											</td>
+											<td>
+												$3,582.99
+											</td>
+											<td>
+												Paypal
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Shipped</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck10">
+													<label class="form-check-label" for="customCheck10">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9700</a> </td>
+											<td>Jan, 22 2018 <small>08:09 PM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-success-light"><i class="mdi mdi-bitcoin"></i> Paid</span></p>
+											</td>
+											<td>
+												$923.95
+											</td>
+											<td>
+												Credit Card
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Delivered</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input" id="customCheck11">
+													<label class="form-check-label" for="customCheck11">&nbsp;</label>
+												</div>
+											</td>
+											<td><a href="#" class="text-body fw-500">#BM9699</a> </td>
+											<td>Jan, 17 2018 <small>02:30 PM</small></td>
+											<td>
+												<p class="mb-0"><span class="badge badge-success-light"><i class="mdi mdi-bitcoin"></i> Paid</span></p>
+											</td>
+											<td>
+												$5,177.68
+											</td>
+											<td>
+												Mastercard
+											</td>
+											<td>
+												<p class="mb-0"><span class="badge badge-primary-light">Shipped</span></p>
+											</td>
+											<td>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-eye"></i></a>
+												<a href="javascript:void(0);" class="action-icon mx-2"> <i class="fa fa-pencil"></i></a>
+												<a href="javascript:void(0);" class="action-icon"> <i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div> <!-- end card-body-->
+					</div> <!-- end card-->
+				</div> <!-- end col -->
 			</div>
+			<!-- end row --> 
 		</section>
 		<!-- /.content -->
 	  </div>
@@ -1217,24 +1424,130 @@
 </div>
 <!-- ./wrapper -->
 	
+	
+	
+	<div id="chat-box-body">
+		<div id="chat-circle" class="waves-effect waves-circle btn btn-circle btn-sm btn-warning l-h-50">
+            <div id="chat-overlay"></div>
+            <span class="icon-Group-chat fs-18"><span class="path1"></span><span class="path2"></span></span>
+		</div>
+
+		<div class="chat-box">
+            <div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button class="waves-effect waves-circle btn btn-circle btn-primary-light h-40 w-40 rounded-circle l-h-50" type="button" data-bs-toggle="dropdown">
+                      <span class="icon-Add-user fs-22"><span class="path1"></span><span class="path2"></span></span>
+                  </button>
+                  <div class="dropdown-menu min-w-200">
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Color me-15"></span>
+                        New Group</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Clipboard me-15"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        Contacts</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Group me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Groups</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Active-call me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Calls</a>
+                    <a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Settings1 me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Settings</a>
+                    <div class="dropdown-divider"></div>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Question-circle me-15"><span class="path1"></span><span class="path2"></span></span>
+                        Help</a>
+					<a class="dropdown-item fs-16" href="#">
+                        <span class="icon-Notifications me-15"><span class="path1"></span><span class="path2"></span></span> 
+                        Privacy</a>
+                  </div>
+                </div>
+                <div class="text-center flex-grow-1">
+                    <div class="text-dark fs-18">Mayra Sibley</div>
+                    <div>
+                        <span class="badge badge-sm badge-dot badge-primary"></span>
+                        <span class="text-muted fs-12">Active</span>
+                    </div>
+                </div>
+                <div class="chat-box-toggle">
+                    <button id="chat-box-toggle" class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-50" type="button">
+                      <span class="icon-Close fs-22"><span class="path1"></span><span class="path2"></span></span>
+                    </button>                    
+                </div>
+            </div>
+            <div class="chat-box-body">
+                <div class="chat-box-overlay">   
+                </div>
+                <div class="chat-logs">
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../../../images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">2 Hours</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Hi there, I'm Jesse and you?
+                        </div>
+                    </div>
+                    <div class="chat-msg self">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">You</a>
+                                <p class="text-muted fs-12 mb-0">3 minutes</p>
+                            </div>
+                            <span class="msg-avatar">
+                                <img src="../../../images/avatar/3.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                        </div>
+                        <div class="cm-msg-text">
+                           My name is Anne Clarc.         
+                        </div>        
+                    </div>
+                    <div class="chat-msg user">
+                        <div class="d-flex align-items-center">
+                            <span class="msg-avatar">
+                                <img src="../../../images/avatar/2.jpg" class="avatar avatar-lg" alt="">
+                            </span>
+                            <div class="mx-10">
+                                <a href="#" class="text-dark hover-primary fw-bold">Mayra Sibley</a>
+                                <p class="text-muted fs-12 mb-0">40 seconds</p>
+                            </div>
+                        </div>
+                        <div class="cm-msg-text">
+                            Nice to meet you Anne.<br>How can i help you?
+                        </div>
+                    </div>
+                </div><!--chat-log -->
+            </div>
+            <div class="chat-input">      
+                <form>
+                    <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit">
+                        <span class="icon-Send fs-22"></span>
+                    </button>
+                </form>      
+            </div>
+		</div>
+	</div>
+	
+	<!-- Page Content overlay -->
+	
+	
 	<!-- Vendor JS -->
-	<script src="src/js/vendors.min.js"></script>
-    <script src="assets/icons/feather-icons/feather.min.js"></script>
-    <script src="assets/vendor_components/raphael/raphael.min.js"></script>
-    <script src="assets/vendor_components/morris.js/morris.min.js"></script>
-    <script src="assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
-    <script src="assets/vendor_components/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/vendor_plugins/bootstrap-slider/bootstrap-slider.js"></script>
-    <script src="assets/vendor_components/OwlCarousel2/dist/owl.carousel.js"></script>
-    <script src="assets/vendor_components/c3/c3.min.js"></script>
-    <script src="assets/vendor_components/c3/d3.min.js"></script>
-
-
-    <!-- InvestX App -->
-    <script src="src/js/demo.js"></script>
-    <script src="src/js/template.js"></script>
-    <script src="src/js/pages/dashboard5.js"></script>
-	<script>$('.slider').slider()</script>
+	<script src="../src/js/vendors.min.js"></script>
+	<script src="../src/js/pages/chat-popup.js"></script>
+    <script src="../../../assets/icons/feather-icons/feather.min.js"></script>	<script src="../../../assets/vendor_components/datatable/datatables.min.js"></script>
+	
+	<!-- InvestX App -->
+	<script src="../src/js/demo.js"></script>
+	<script src="../src/js/template.js"></script>    
+	    
+	<script src="../src/js/pages/data-table.js"></script>
 	
 
 </body>
